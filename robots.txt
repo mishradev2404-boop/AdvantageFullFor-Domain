@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Leftover single-page-app fragments - not real pages
+Disallow: /home.html
+Disallow: /_header.html
+Disallow: /_footer.html
+
+Sitemap: https://advantage-media.in/sitemap.xml
