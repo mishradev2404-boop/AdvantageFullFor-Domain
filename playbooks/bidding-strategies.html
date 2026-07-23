@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PNLTBBF5');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Bidding Strategies for Pipeline ROI | AdVantage Media</title>
+    <meta name="description" content="Automated vs. Manual bidding on LinkedIn Ads: Learn when to use maximum delivery, target cost, or manual CPM/CPC bidding to maximize pipeline ROI and minimize wasted ad spend.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path d='M16 2L30 10V22L16 30L2 22V10L16 2Z' fill='%230A66C2'/><path d='M16 8L24 13V19L16 24L8 19V13L16 8Z' fill='white' fill-opacity='0.3'/><path d='M16 12L20 14.5V17.5L16 20L12 17.5V14.5L16 12Z' fill='white'/></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>if(!location.hostname.endsWith("github.io")){var s=document.createElement("script");s.defer=true;s.src="/_vercel/speed-insights/script.js";document.head.appendChild(s);}</script>
+
+    <link rel="canonical" href="https://advantage-media.in/playbooks/bidding-strategies-pipeline-roi">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AdVantage Media">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:url" content="https://advantage-media.in/playbooks/bidding-strategies-pipeline-roi">
+    <meta property="og:title" content="Bidding Strategies for Pipeline ROI | AdVantage Media">
+    <meta property="og:description" content="Automated vs. Manual bidding: Learn when to use which bidding strategy to reach high-value prospects and protect budget efficiency.">
+    <meta property="og:image" content="https://advantage-media.in/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bidding Strategies for Pipeline ROI | AdVantage Media">
+    <meta name="twitter:description" content="Automated vs. Manual bidding: Learn when to use which bidding strategy to reach high-value prospects and protect budget efficiency.">
+    <meta name="twitter:image" content="https://advantage-media.in/og-image.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Bidding Strategies for Pipeline ROI",
+      "description": "Automated vs. Manual bidding: when to use which to ensure your budget reaches the right prospects.",
+      "author": {
+        "@type": "Organization",
+        "name": "AdVantage Media",
+        "url": "https://advantage-media.in/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AdVantage Media"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does LinkedIn default to Maximum Delivery (Automated Bidding)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maximum Delivery ensures quick campaign launch and budget consumption by bidding aggressively to win ad auctions. However, for niche B2B audiences, it often inflates CPMs without guaranteeing better lead quality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I switch from Maximum Delivery to Manual Bidding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Switch to Manual Bidding when targeting high-intent, highly specific ICP lists, or when your ad CTR outperforms industry benchmarks (0.50%+ for Sponsored Content). Manual CPM allows you to cap costs while retaining high reach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Target Cost Bidding better for Lead Generation campaigns?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Target Cost bidding works well for mid-funnel conversion campaigns with steady daily volume. It keeps your Cost Per Lead (CPL) predictable while letting LinkedIn algorithmically adjust bids per auction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does ad CTR impact Manual CPM bidding efficiency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LinkedIn’s auction ranks ads by Bid × CTR. High CTR ads are rewarded with higher placement priority. By setting a low manual CPM on high-CTR creatives, you can achieve significantly lower effective Cost Per Click (eCPC)."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://advantage-media.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Playbooks",
+          "item": "https://advantage-media.in/resources"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Bidding Strategies for Pipeline ROI",
+          "item": "https://advantage-media.in/playbooks/bidding-strategies-pipeline-roi"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+/* Base Styles & CSS Variables */
+:root {
+    --primary: #0A66C2;       
+    --primary-dark: #004182;  
+    --surface-light: #F3F6F8; 
+    --surface-white: #FFFFFF;
+    --text-main: #191919;     
+    --text-secondary: #5E666E;
+    --border: #E0E0E0;
+    --container-width: 1180px;
+    --header-height: 80px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--surface-white);
+    color: var(--text-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
+a { text-decoration: none; color: inherit; transition: all 0.2s ease; cursor: pointer; }
+.container { max-width: var(--container-width); margin: 0 auto; padding: 0 24px; width: 100%; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; font-weight: 600; font-size: 1rem; border-radius: 24px; cursor: pointer; transition: all 0.2s var(--ease); border: 2px solid transparent; }
+.btn-primary { background-color: var(--primary); color: white; }
+.btn-primary:hover { background-color: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(10, 102, 194, 0.25); }
+.btn-secondary { background-color: transparent; border-color: var(--primary); color: var(--primary); }
+.btn-secondary:hover { background-color: rgba(10, 102, 194, 0.05); }
+header { height: var(--header-height); position: fixed; top: 0; left: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); z-index: 1000; display: flex; align-items: center; }
+.nav-content { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 10px; }
+.logo-icon { width: 32px; height: 32px; background: var(--primary); clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%); }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-weight: 500; font-size: 0.95rem; color: var(--text-secondary); }
+.nav-links a:hover, .nav-links a.active { color: var(--primary); }
+.services-hero { padding-top: calc(var(--header-height) + 100px); padding-bottom: 100px; background: radial-gradient(circle at 100% 0%, rgba(10, 102, 194, 0.05) 0%, transparent 30%); text-align: center; }
+.services-hero h1 { font-size: 3.5rem; margin-bottom: 24px; }
+.services-hero p { font-size: 1.25rem; color: var(--text-secondary); max-width: 750px; margin: 0 auto; }
+.service-detail { padding: 120px 0; border-top: 1px solid var(--border); }
+.service-detail.alt { background-color: var(--surface-light); }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.detail-content h2 { font-size: 2.5rem; margin-bottom: 24px; color: var(--text-main); }
+.detail-content p { font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 32px; line-height: 1.7; }
+.feature-list { margin-bottom: 40px; }
+.feature-item { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
+.feature-icon { color: var(--primary); font-weight: bold; font-size: 1.2rem; flex-shrink: 0; margin-top: -2px; }
+.feature-text h4 { font-size: 1.1rem; margin-bottom: 4px; }
+.feature-text p { font-size: 0.95rem; margin-bottom: 0; line-height: 1.5; }
+.detail-visual { background: white; padding: 40px; border-radius: var(--radius-md); box-shadow: 0 20px 40px rgba(0,0,0,0.05); border: 1px solid var(--border); position: relative; }
+.highlight-box { background: var(--surface-light); padding: 40px; border-left: 4px solid var(--primary); border-radius: var(--radius-md); }
+.faq-section { padding: 100px 0; background-color: var(--surface-white); border-top: 1px solid var(--border); }
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 80px; }
+.faq-item h3 { font-size: 1.25rem; margin-bottom: 12px; color: var(--text-main); }
+.faq-item p { color: var(--text-secondary); line-height: 1.6; }
+.footer-cta { background-color: var(--primary-dark); padding: 80px 0; color: white; text-align: center; }
+.footer-nav { padding: 40px 0; background: #00366d; color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+.footer-nav-content { display: flex; justify-content: space-between; align-items: center; }
+.social-links { display: flex; gap: 16px; }
+.social-links a { color: white; }
+.crumbs { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 18px; }
+.crumbs a { color: var(--text-secondary); }
+.crumbs a:hover { color: var(--primary); }
+.related { border-top: 1px solid var(--border); margin-top: 56px; padding-top: 36px; }
+.related h2 { font-size: 1.3rem; margin-bottom: 20px; }
+.related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.related-card { display: block; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; transition: border-color .2s ease, transform .2s ease; }
+.related-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+.related-card span { font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--primary); }
+.related-card h3 { font-size: 1rem; margin: 8px 0 6px; line-height: 1.35; }
+.related-card p { font-size: .88rem; color: var(--text-secondary); line-height: 1.55; margin: 0; }
+@media (max-width: 1024px) { .detail-grid, .faq-grid { grid-template-columns: 1fr; } .services-hero h1 { font-size: 2.5rem; } }
+@media (max-width: 768px) { :root { --header-height: 64px; } .nav-links { display: none; } .services-hero { padding-top: calc(var(--header-height) + 60px); padding-bottom: 60px; } }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNLTBBF5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-content">
+            <div class="logo" onclick="window.location.href='../'" style="cursor:pointer;">
+                <div class="logo-icon"></div>
+                AdVantage
+            </div>
+            <nav class="nav-links" id="main-nav">
+                <a href="../services.html">Services</a>
+                <a href="../story.html">Our Story</a>
+                <a href="../resources.html" class="active">Resources</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="services-hero">
+        <div class="container">
+            <div class="crumbs"><a href="../">Home</a> &rsaquo; <a href="../resources.html">Resources</a> &rsaquo; Bidding Strategies for Pipeline ROI</div>
+            <h1 style="margin-top: 12px;">Bidding Strategies for Pipeline ROI</h1>
+            <p>Automated vs. Manual bidding: Learn when to use which bidding strategy to ensure your budget systematically reaches the highest-value enterprise prospects without overpaying.</p>
+        </div>
+    </section>
+
+    <section class="service-detail">
+        <div class="container">
+            <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 24px; max-width: 800px; line-height: 1.7;">Selecting the wrong bidding strategy on LinkedIn Campaign Manager is one of the quickest ways to drain advertising budgets. Defaulting to automated bidding often causes CPMs to skyrocket, while overly restrictive manual bids can prevent your campaigns from delivering altogether.</p>
+            <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 48px; max-width: 800px; line-height: 1.7;">To maximize sales pipeline and yield high return on spend, performance marketers must align bidding mechanics with campaign objectives, audience size, and creative performance.</p>
+
+            <div class="detail-grid">
+                <div class="detail-content">
+                    <h2>Deconstructing the 3 Bidding Frameworks</h2>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Maximum Delivery (Automated Bidding)</h4>
+                                <p>LinkedIn dynamically sets your bid to spend your daily budget as quickly and efficiently as possible. Best used during broad brand awareness campaigns or initial testing phases where fast volume and speed to market take priority.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Target Cost Bidding</h4>
+                                <p>You specify a target cost per action (e.g., Cost Per Lead or Cost Per Click), and LinkedIn adjusts bids per auction to maintain that average cost over time. Ideal for mid-funnel lead generation with established baseline conversion data.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Manual CPM / CPC Bidding</h4>
+                                <p>Gives you full control over the exact maximum amount you are willing to bid in ad auctions. Crucial for ABM campaigns, high-intent retargeting lists, and high-performing ads where capping CPM yields significantly lower effective CPCs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-visual" style="padding: 0; overflow: hidden; background: var(--surface-light);">
+                    <div style="height: 350px; background: linear-gradient(135deg, #e8f0fe 0%, #c7daf8 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        <svg fill="none" height="280" viewbox="0 0 320 280" width="320" xmlns="http://www.w3.org/2000/svg">
+                            <rect fill="white" height="200" opacity="0.95" rx="8" width="220" x="50" y="40"></rect>
+                            <line stroke="#E0E0E0" stroke-width="2" x1="70" x2="250" y1="90" y2="90"></line>
+                            <line stroke="#E0E0E0" stroke-width="2" x1="70" x2="250" y1="150" y2="150"></line>
+                            <!-- Bid Sliders -->
+                            <circle cx="110" cy="90" fill="#0A66C2" r="8"></circle>
+                            <circle cx="190" cy="150" fill="#004182" r="8"></circle>
+                            <rect fill="#0A66C2" height="24" rx="12" width="100" x="110" y="190"></rect>
+                            <text fill="white" font-size="10" font-weight="bold" x="127" y="206">ROI OPTIMIZED</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail alt">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-visual" style="order: 2; padding: 0; overflow: hidden; background: var(--surface-light);">
+                    <div style="height: 350px; background: linear-gradient(135deg, #f0f7ff 0%, #ddeeff 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                        <svg fill="none" height="280" viewbox="0 0 320 280" width="320" xmlns="http://www.w3.org/2000/svg">
+                            <rect fill="white" height="180" opacity="0.95" rx="8" width="220" x="50" y="50"></rect>
+                            <path d="M 70 180 L 120 150 L 170 100 L 230 70" fill="none" stroke="#0A66C2" stroke-linecap="round" stroke-width="3"></path>
+                            <circle cx="120" cy="150" fill="#0A66C2" r="4"></circle>
+                            <circle cx="170" cy="100" fill="#0A66C2" r="4"></circle>
+                            <circle cx="230" cy="70" fill="#004182" r="6"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="detail-content" style="order: 1;">
+                    <h2>When to Automate vs. When to Control Manually</h2>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">1</div>
+                            <div class="feature-text">
+                                <h4>Small, High-Value Target Lists (Manual Bidding)</h4>
+                                <p>For ABM lists under 10,000 members, automated bidding can quickly overspend to win auction slots. Use Manual CPM bidding, starting slightly above LinkedIn’s recommended floor price, to maintain stable delivery without paying premium CPM spikes.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">2</div>
+                            <div class="feature-text">
+                                <h4>High-CTR Ads (Manual CPM Bidding)</h4>
+                                <p>When an ad achieves an exceptional Click-Through Rate (&gt;0.60%), manual CPM bidding lowers your effective CPC. Because LinkedIn penalizes low-CTR creative with higher auction costs, winning high-CTR auctions with fixed CPM caps creates massive budget efficiency.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">3</div>
+                            <div class="feature-text">
+                                <h4>Cold Horizon Audiences (Maximum Delivery)</h4>
+                                <p>When launching campaigns into large, untapped cold audiences (&gt;100k members), Maximum Delivery allows the platform algorithm to rapidly locate early responders and optimize pacing.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">4</div>
+                            <div class="feature-text">
+                                <h4>Continuous Bid Floor Adjustment</h4>
+                                <p>Monitor impression delivery every 48 hours. If delivery stalls under manual bidding, increment bids by $1.00–$2.00 until pacing stabilizes at target daily spend thresholds.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-content">
+                    <h2>Maximizing Pipeline Efficiency Across Tiers</h2>
+                    <p>Bidding optimization is not a one-time setup—it requires continuous alignment with audience responsiveness and pipeline generation. By pacing bids strategically, B2B campaigns prevent ad fatigue while safeguarding acquisition metrics.</p>
+                    <div class="highlight-box" style="margin-top: 30px;">
+                        <h4 style="color: var(--primary-dark); margin-bottom: 8px;">Are your LinkedIn ad bidding setups wasting spend?</h4>
+                        <p style="margin-bottom: 16px;">We can evaluate your active ad campaigns, bidding modes, and CTR benchmarks to eliminate budget inefficiency and optimize for qualified sales leads.</p>
+                        <a href="../contact.html" class="btn btn-secondary">Get a Free Campaign Audit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div style="margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: var(--text-main);">Frequently asked questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Why does LinkedIn default to Maximum Delivery (Automated Bidding)?</h3>
+                    <p>Maximum Delivery ensures quick campaign launch and budget consumption by bidding aggressively to win ad auctions. However, for niche B2B audiences, it often inflates CPMs without guaranteeing better lead quality.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>When should I switch from Maximum Delivery to Manual Bidding?</h3>
+                    <p>Switch to Manual Bidding when targeting high-intent, highly specific ICP lists, or when your ad CTR outperforms industry benchmarks (0.50%+ for Sponsored Content). Manual CPM allows you to cap costs while retaining high reach.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is Target Cost Bidding better for Lead Generation campaigns?</h3>
+                    <p>Target Cost bidding works well for mid-funnel conversion campaigns with steady daily volume. It keeps your Cost Per Lead (CPL) predictable while letting LinkedIn algorithmically adjust bids per auction.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does ad CTR impact Manual CPM bidding efficiency?</h3>
+                    <p>LinkedIn’s auction ranks ads by Bid × CTR. High CTR ads are rewarded with higher placement priority. By setting a low manual CPM on high-CTR creatives, you can achieve significantly lower effective Cost Per Click (eCPC).</p>
+                </div>
+            </div>
+
+            <div class="related">
+                <h2>Keep reading</h2>
+                <div class="related-grid">
+                    <a class="related-card" href="../playbooks/account-based-marketing-guide.html">
+                        <span>Playbook</span>
+                        <h3>The Account-Based Marketing (ABM) Guide</h3>
+                        <p>Learn how to build high-precision campaigns targeting your most valuable prospective accounts on LinkedIn…</p>
+                    </a>
+                    <a class="related-card" href="../playbooks/linkedin-campaign-optimisation.html">
+                        <span>Playbook</span>
+                        <h3>How to Actually Optimise a LinkedIn Lead Generation Campaign</h3>
+                        <p>Most advertisers optimise the wrong numbers. Here are the two metrics that actually decide wheth…</p>
+                    </a>
+                    <a class="related-card" href="../services/linkedin-ads-management.html">
+                        <span>Services</span>
+                        <h3>LinkedIn Ads Management</h3>
+                        <p>Full-service campaign management built around revenue and sales pipeline.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-cta">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Start with a free audit</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 30px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">No obligation and no hard sell — a straightforward review of what your LinkedIn presence is doing today and what we would change.</p>
+            <button class="btn btn-primary" onclick="window.location.href='../contact.html'" style="background: white; color: var(--primary-dark);">Get a Free Audit</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-nav">
+        <div class="container footer-nav-content">
+            <div>&copy; 2026 AdVantage Media.</div>
+            <div class="social-links">
+                <a href="../services.html">Services</a>
+                <a href="../story.html">About</a>
+                <a href="../resources.html">Resources</a>
+                <a href="../contact.html">Contact</a>
+                <span style="opacity:0.3">|</span>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
